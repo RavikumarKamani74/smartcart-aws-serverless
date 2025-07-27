@@ -1,0 +1,68 @@
+const products = [
+  {
+    id: 1,
+    name: "Wireless Headphones",
+    category: "Electronics",
+    price: 59.99,
+    image: "https://m.media-amazon.com/images/I/61mIUCd-37L._SX679_.jpg",
+    description: "Noise-canceling headphones with 20-hour battery life.",
+  },
+  {
+    id: 2,
+    name: "Smart Watch",
+    category: "Wearables",
+    price: 89.99,
+    image: "https://m.media-amazon.com/images/I/61ZuL8CUigL._SX679_.jpg",
+    description: "Fitness tracking, notifications, and heart rate monitor.",
+  },
+  {
+    id: 3,
+    name: "Gaming Mouse",
+    category: "Accessories",
+    price: 39.99,
+    image: "https://m.media-amazon.com/images/I/61cCf94xIEL._SX679_.jpg",
+    description: "High precision gaming mouse with RGB lighting.",
+  },
+  {
+    id: 4,
+    name: "Bluetooth Speaker",
+    category: "Electronics",
+    price: 29.99,
+    image: "/images/speaker.jpg",
+    description: "Portable speaker with deep bass and 10-hour playtime.",
+  },
+  {
+    id: 5,
+    name: "USB-C Charger",
+    category: "Accessories",
+    price: 19.99,
+    image: "/images/USB-C Chargerjpg",
+    description: "Fast charging USB-C wall charger (20W PD).",
+  },
+  {
+    id: 6,
+    name: "4K Monitor",
+    category: "Electronics",
+    price: 249.99,
+    image: "https://m.media-amazon.com/images/I/71wF7YDIQkL._SX679_.jpg",
+    description: "27-inch 4K UHD monitor with HDR and HDMI input.",
+  },
+  {
+    id: 7,
+    name: "Mechanical Keyboard",
+    category: "Accessories",
+    price: 79.99,
+    image: "https://m.media-amazon.com/images/I/61kWB+uzR2L._SX679_.jpg",
+    description: "Tactile switches with RGB backlighting and wrist rest.",
+  },
+  {
+    id: 8,
+    name: "Webcam 1080p",
+    category: "Accessories",
+    price: 49.99,
+    image: "/images/Webcam 1080p.jpg",
+    description: "Full HD webcam with built-in microphone and privacy cover.",
+  },
+];
+
+export default products;

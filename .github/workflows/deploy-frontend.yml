@@ -1,0 +1,35 @@
+name: Deploy Frontend using OIDC IAM Role
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials using OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::358238714507:role/GitHubFrontendDeployRole
+          aws-region: ap-south-2
+
+      - name: Install & Build React App
+        run: |
+          cd frontend
+          npm install
+          npm run build
+
+      - name: Sync to S3
+        run: aws s3 sync frontend/build s3://tree-tier-serverless-project --delete
+
+      - name: Invalidate CloudFront
+        run: aws cloudfront create-invalidation --distribution-id EM66CTFKX1XT7 --paths "/*"
