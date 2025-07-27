@@ -17,8 +17,7 @@
 🌐 CI/CD: GitHub Actions with IAM OIDC (no access keys)
 
 🧱 Architecture Diagram
-
-(Replace with uploaded image in repo)
+![SmartCart Architecture](assets/architecture.png)
 
 🛠 Technologies UsedFrontend: React, Tailwind CSS
 
@@ -84,5 +83,7 @@ $ npm install
 
 $ npm startNOTE: Backend is deployed on AWS and tied to Cognito/Auth. Local version only works for testing UI.
 
-📸 Screenshots(Include screenshots/ folder with key UI pages like login, home, cart, etc.)
+📸 Screenshots
+<img width="1913" height="927" alt="image" src="https://github.com/user-attachments/assets/de808673-a07a-4760-8b7c-b7a50d15677b" />
+
 
