@@ -36,7 +36,7 @@
 
 🧱 Architecture Diagram
 
-!\[SmartCart Architecture](assets/architecture.png)
+[![SmartCart Architecture](assets/architecture.png)]
 
 
 
