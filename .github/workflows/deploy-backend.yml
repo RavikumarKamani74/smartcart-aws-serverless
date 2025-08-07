@@ -19,8 +19,8 @@ jobs:
       - name: Configure AWS credentials using OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::<358238714507>:role/GitHubBackendDeployRole
-          aws-region: ap-south-2
+          role-to-assume: arn:aws:iam::358238714507:role/TESTING-PRACTICE
+          aws-region: us-east-1
 
       - name: Deploy SaveCartFunction
         run: |
