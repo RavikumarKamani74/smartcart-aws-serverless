@@ -20,7 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::358238714507:role/e-commerce-site
-          aws-region: ap-south-2
+          aws-region: us-east-1
 
       - name: Install & Build React App
         run: |
