@@ -19,7 +19,7 @@ jobs:
       - name: Configure AWS credentials using OIDC
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::358238714507:role/TESTING-PRACTICE
+          role-to-assume: arn:aws:iam::358238714507:role/e-commerce-site
           aws-region: ap-south-2
 
       - name: Install & Build React App
